@@ -156,3 +156,44 @@ function showPopup(title, message) {
     popup.remove();
   });
 }
+document.addEventListener("DOMContentLoaded", () => {
+  document.querySelectorAll("button").forEach((btn) => {
+    const label = btn.innerText.trim().toUpperCase();
+
+    if (label === "SETUP GOAL") {
+      btn.addEventListener("click", () => {
+        showPopup(
+          "🎯 Setup Goal",
+          "Set a weekly or monthly saving goal to start building better financial habits. Start small — even ₹500/month makes a difference!"
+        );
+      });
+    }
+
+    if (label === "VIEW STATUS") {
+      btn.addEventListener("click", () => {
+        showPopup(
+          "📊 Loan Status",
+          "You're crushing it! ₹5,678 paid this year 💸. Keep up the consistency — you're on track to being debt-free!"
+        );
+      });
+    }
+
+    if (label === "VIEW GOAL") {
+      btn.addEventListener("click", () => {
+        showPopup(
+          "🏖️ Goa Trip Progress",
+          "You've saved ₹12,000 so far out of ₹20,000. You're just ₹8,000 away from that sunset beach and coconut vibes. Keep going!"
+        );
+      });
+    }
+
+    if (label === "VIEW SPENDING") {
+      btn.addEventListener("click", () => {
+        showPopup(
+          "💡 Smart Spending Tip",
+          "You made 42 small purchases under ₹50 last month. Tracking these can significantly boost your savings!"
+        );
+      });
+    }
+  });
+});
