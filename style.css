@@ -1,0 +1,151 @@
+/* -------- Fonts & Reset -------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #e2b0ff, #9f44d3);
+  min-height: 100vh;
+  padding: 20px;
+  color: #2d2d2d;
+}
+
+/* -------- Card Style -------- */
+.card {
+  background: rgba(255, 255, 255, 0.25);
+  border-radius: 20px;
+  backdrop-filter: blur(14px);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  padding: 18px 20px;
+  margin-bottom: 22px;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.01);
+}
+
+.card-title {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: #3d0066;
+}
+
+.card-sub {
+  font-size: 14px;
+  font-weight: 500;
+  color: #7e4d9e;
+}
+
+.tag {
+  display: inline-block;
+  padding: 4px 10px;
+  font-size: 12px;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.35);
+  color: #7d3ec7;
+  font-weight: 600;
+  backdrop-filter: blur(4px);
+  margin-top: 8px;
+}
+
+/* XP Badge */
+.xp-badge {
+  background: rgba(255, 255, 255, 0.4);
+  padding: 4px 12px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 600;
+  color: #6b21a8;
+  margin-left: auto;
+}
+
+/* Tip Text */
+.tip-text {
+  font-style: italic;
+  color: #5e2784;
+  font-weight: 500;
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+/* -------- Leaderboard Section -------- */
+.leaderboard {
+  margin-top: 30px;
+}
+
+.leaderboard-title {
+  font-size: 20px;
+  font-weight: bold;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.leader {
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(12px);
+  border-radius: 12px;
+  padding: 10px 15px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  color: #fff;
+  font-weight: 500;
+}
+
+.leader .rank {
+  font-weight: bold;
+  color: #fff;
+}
+
+.leader .xp {
+  color: #fbd38d;
+  font-weight: 700;
+}
+@keyframes bubble {
+  0% {
+    transform: translateY(0) scale(1);
+    opacity: 0.5;
+  }
+  100% {
+    transform: translateY(-200px) scale(1.5);
+    opacity: 0;
+  }
+}
+.animate-bubble {
+  animation: bubble 3s linear infinite;
+}
+@keyframes scaleIn {
+  0% {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.animate-scaleIn {
+  animation: scaleIn 0.3s ease-in-out;
+}
+@keyframes scaleIn {
+  0% { transform: scale(0.8); opacity: 0; }
+  100% { transform: scale(1); opacity: 1; }
+}
+.animate-scaleIn {
+  animation: scaleIn 0.3s ease-out forwards;
+}
+
+@keyframes bubble {
+  0% { transform: translateY(0); opacity: 0.3; }
+  100% { transform: translateY(-200px); opacity: 0; }
+}
+.animate-bubble {
+  animation: bubble 4s linear infinite;
+}

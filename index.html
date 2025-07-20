@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Finance Genz Dashboard</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body class="bg-gradient-to-b from-[#f0f4f8] to-[#d9e2ec] min-h-screen p-4 font-sans text-gray-800">
+    <!-- App Logo -->
+<div class="mb-5 flex items-center space-x-3">
+  <img src="https://cdn-icons-png.flaticon.com/512/891/891462.png" class="w-8 h-8" alt="logo" />
+  <h1 class="text-xl font-bold text-[#5B247A]">Finsera</h1>
+  <p class="text-sm text-gray-600 mt-1 italic">Smarter money. Stronger you.</p>
+</div>
+
+</div>
+
+    <!-- Header -->
+    <div class="mb-5">
+      <div class="flex items-center space-x-3">
+        <img src="https://i.pravatar.cc/100?img=12" class="w-10 h-10 rounded-full" alt="user" />
+        <div>
+          <p class="text-sm">Welcome back, <b>User</b></p>
+          <p class="text-xs text-gray-500">Your finances are improving 👏</p>
+        </div>
+      </div>
+    </div>
+    <div class="flex justify-center mt-4">
+  <button id="takeQuiz" class="bg-purple-600 hover:bg-purple-700 text-white px-5 py-2 rounded-full shadow-md font-semibold transition">
+     Take Quiz to earn XP
+  </button>
+</div>
+ <div class="bg-white/30 backdrop-blur-md rounded-2xl shadow-lg p-4 mb-6 border border-white/20 text-gray-800">
+  <div class="flex justify-between items-center">
+    <h3 class="text-lg font-semibold">💡 Smart Tip</h3>
+    <span class="text-sm bg-white/40 backdrop-blur px-2 py-1 rounded-full text-purple-700 font-semibold">
+      💎 40 XP
+    </span>
+  </div>
+
+  <div class="mt-3 text-sm font-medium text-purple-800 italic" id="tip-message">
+    “Track your small expenses daily!”
+  </div>
+</div>
+
+
+    <!-- Cards -->
+    <div class="space-y-5">
+
+      <!-- Card 1 -->
+      <div class="rounded-xl shadow-lg bg-gradient-to-br from-[#a1c4fd] to-[#c2e9fb]text-white p-4">
+        <div class="flex justify-between text-xs mb-1 opacity-90">
+          <span>Spending Tip</span>
+          <span>20 Jul</span>
+        </div>
+        <p class="text-sm mb-2 leading-snug">
+          You made <b>42</b> small purchases under ₹50 last month. Try to track those tiny expenses!
+        </p>
+        <button class="text-xs bg-white text-[#5B247A] px-3 py-1 rounded-full font-semibold shadow">SETUP GOAL</button>
+        <!-- XP Bar -->
+        <div class="mt-4">
+          <div class="flex justify-between text-xs text-white/90 mb-1">
+            <span>XP</span>
+            <span>310/500</span>
+          </div>
+          <div class="w-full h-2 bg-white/30 rounded-full">
+            <div class="h-2 bg-white rounded-full w-[62%]"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="rounded-xl shadow-lg bg-gradient-to-br from-[#a1c4fd] to-[#c2e9fb] text-white p-4">
+        <div class="flex justify-between text-xs mb-1 opacity-90">
+          <span>Loan Progress</span>
+          <span>20 Jul</span>
+        </div>
+        <p class="text-sm mb-2 leading-snug">
+          You’ve paid ₹5,678 off your loan this year. Amazing consistency!
+        </p>
+        <button class="text-xs bg-white text-[#5B247A] px-3 py-1 rounded-full font-semibold shadow">VIEW STATUS</button>
+        <!-- XP Bar -->
+        <div class="mt-4">
+          <div class="flex justify-between text-xs text-white/90 mb-1">
+            <span>XP</span>
+            <span>400/500</span>
+          </div>
+          <div class="w-full h-2 bg-white/30 rounded-full">
+            <div class="h-2 bg-white rounded-full w-[80%]"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="rounded-xl shadow-lg bg-gradient-to-br from-[#a1c4fd] to-[#c2e9fb] text-white p-4">
+        <div class="flex justify-between text-xs mb-1 opacity-90">
+          <span>Goa Trip Goal</span>
+          <span>20 Jul</span>
+        </div>
+        <p class="text-sm mb-2 leading-snug">
+          Saved ₹12,000 / ₹20,000 so far. Keep pushing for that beach vacation! 🏖️
+        </p>
+        <button class="text-xs bg-white text-[#5B247A] px-3 py-1 rounded-full font-semibold shadow">VIEW GOAL</button>
+        <!-- XP Bar -->
+        <div class="mt-4">
+          <div class="flex justify-between text-xs text-white/90 mb-1">
+            <span>XP</span>
+            <span>250/500</span>
+          </div>
+          <div class="w-full h-2 bg-white/30 rounded-full">
+            <div class="h-2 bg-white rounded-full w-[50%]"></div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Leaderboard -->
+    <div class="mt-10">
+      <h2 class="text-lg font-semibold mb-3 text-[#5B247A]">🏆 Leaderboard</h2>
+      <div class="space-y-3">
+
+        <div class="flex items-center justify-between p-3 bg-white rounded-xl shadow">
+          <div class="flex items-center space-x-3">
+            <img src="https://i.pravatar.cc/100?img=1" class="w-8 h-8 rounded-full" />
+            <div>
+              <p class="text-sm font-medium">Akshita</p>
+              <p class="text-xs text-gray-500">Rank 1</p>
+            </div>
+          </div>
+          <p class="text-sm font-bold text-[#5B247A]">XP 940</p>
+        </div>
+
+        <div class="flex items-center justify-between p-3 bg-white rounded-xl shadow">
+          <div class="flex items-center space-x-3">
+            <img src="https://i.pravatar.cc/100?img=2" class="w-8 h-8 rounded-full" />
+            <div>
+              <p class="text-sm font-medium">User</p>
+              <p class="text-xs text-gray-500">Rank 2</p>
+            </div>
+          </div>
+          <p class="text-sm font-bold text-[#5B247A]">XP 850</p>
+        </div>
+
+        <div class="flex items-center justify-between p-3 bg-white rounded-xl shadow">
+          <div class="flex items-center space-x-3">
+            <img src="https://i.pravatar.cc/100?img=3" class="w-8 h-8 rounded-full" />
+            <div>
+              <p class="text-sm font-medium">Neha</p>
+              <p class="text-xs text-gray-500">Rank 3</p>
+            </div>
+          </div>
+          <p class="text-sm font-bold text-[#5B247A]">XP 790</p>
+        </div>
+
+      </div>
+    </div>
+  <!-- Daily Tracker Card -->
+<div class="rounded-xl shadow-lg bg-gradient-to-br from-[#f9d29d] to-[#fca17d] text-white p-4">
+  <div class="flex justify-between text-xs mb-1 opacity-90">
+    <span>Daily Budget</span>
+    <span>20 Jul</span>
+  </div>
+  <p class="text-sm mb-2 leading-snug">
+    You’ve spent ₹480 today. Stay within your daily limit of ₹500. Only ₹20 left!
+  </p>
+  <button class="text-xs bg-white text-orange-800 px-3 py-1 rounded-full font-semibold shadow">VIEW SPENDING</button>
+  <div class="mt-4">
+    <div class="flex justify-between text-xs text-white/90 mb-1">
+      <span>XP</span>
+      <span>180/200</span>
+    </div>
+    <div class="w-full h-2 bg-white/30 rounded-full">
+      <div class="h-2 bg-white rounded-full w-[90%]"></div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal -->
+<div id="quizModal" class="hidden fixed inset-0 bg-black/40 flex items-center justify-center z-50">
+  <div class="bg-white rounded-xl p-6 w-80 text-center shadow-lg">
+    <h2 class="text-lg font-semibold text-[#5B247A] mb-3">Guess Your Weekly Spend</h2>
+    <input type="number" id="guessInput" placeholder="₹ e.g. 1200" class="w-full p-2 border rounded mb-4" />
+    <button id="submitGuess" class="bg-purple-600 text-white px-4 py-2 rounded-full">Submit</button>
+  </div>
+</div>
+<!-- View Spending Popup -->
+<div id="spendingPopup" class="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center z-50 hidden">
+  <div class="bg-white rounded-xl p-6 max-w-sm w-full relative">
+    <button id="closeSpendingPopup" class="absolute top-2 right-2 text-gray-600 text-xl">&times;</button>
+    <h2 class="text-lg font-bold mb-2 text-[#5B247A]">Spending Insights</h2>
+    <p class="text-sm text-gray-700 mb-4">
+      You’ve made several low-value transactions this month. Review your patterns and avoid impulse spending.
+    </p>
+    <button id="submitSpending" class="bg-[#5B247A] text-white px-4 py-2 rounded-full text-sm">Okay</button>
+  </div>
+</div>
+<!-- Quiz Popup -->
+<div id="quizPopup" class="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center z-50 hidden">
+  <div class="bg-white rounded-xl p-6 max-w-sm w-full relative">
+    <button id="closeQuizPopup" class="absolute top-2 right-2 text-gray-600 text-xl">&times;</button>
+    <h2 class="text-lg font-bold mb-4 text-[#5B247A]">Smart Finance Quiz</h2>
+    <p id="quizQuestion" class="text-sm mb-4"></p>
+    <div id="quizOptions" class="space-y-2"></div>
+    <p id="quizFeedback" class="text-sm text-red-600 mt-2 font-semibold hidden"></p>
+
+    <button id="submitQuizBtn" class="mt-4 bg-[#5B247A] text-white px-4 py-2 rounded-lg font-semibold shadow w-full">Submit Quiz</button>
+  </div>
+</div>
+
+<!-- XP Popup -->
+<div id="xpPopup" class="fixed bottom-6 left-1/2 transform -translate-x-1/2 bg-purple-600 text-white px-4 py-2 rounded-full shadow-lg z-50 hidden">
+  🎉 Quiz Complete! You earned +120 XP!
+</div>
+
+
+<!-- Quiz Starting Popup -->
+<div id="quizStartPopup" class="fixed bottom-20 left-1/2 transform -translate-x-1/2 bg-[#5B247A] text-white px-4 py-2 rounded-full shadow-lg z-50 hidden animate-bounce">
+  Quiz Started! Let’s go!
+</div>
+
+<!-- Quiz Submitted Popup -->
+<div id="quizSubmittedPopup" class="fixed bottom-20 left-1/2 transform -translate-x-1/2 bg-green-600 text-white px-4 py-2 rounded-full shadow-lg z-50 hidden animate-bounce">
+   Quiz Submitted!
+</div>
+
+
+  </body>
+  <script src="script.js"></script>
+</body>
+</html>
+
+</html>
